@@ -6,8 +6,39 @@
 </head>
 
 <body>
-    <script> alert('You have 10 guesses!')</script>
-    <h1> Quick Test</h1>
+    <script> alert('You have 10 guesses! Guess the Number! Between 1 - 10');
+
+
+
+        var answer = Math.floor(Math.random() * 10);
+        var guess;
+
+
+        
+
+    for(i = 0; i < 10; i++)
+    {
+        console.log(i + 1);
+            guess = prompt("Take a guess!");
+            console.log(answer);
+
+        if(guess == answer)
+        {
+            alert('Correct Answer!');
+            break;
+        }
+        else
+        {
+            alert('Wrong.. Try again..');
+            console.log(answer);
+        }
+
+        
+    }
+
+
+</script>
+    <h1> Congratulations!</h1>
 
 </body>
 
