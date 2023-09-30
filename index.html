@@ -81,9 +81,12 @@
 
                     }
 
-
-                    alert(tryagain + ' is Not a valid answer!');
                     tryagain = prompt("Try Again?")
+                    
+                    if(tryagain != "Yes" || tryagain != "yes" || tryagain != "No" || tryagain != "no")
+                    {
+                    alert(tryagain + ' is Not a valid answer!');
+                    }
                     
 
                     
