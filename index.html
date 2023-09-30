@@ -6,24 +6,23 @@
 </head>
 
 <body>
-    <script> alert('You have 4 guesses! Guess the Number! Between 1 - 10');
+    <script> alert('10 QUESTIONS ABOUT ME!');
 
-
+        const answers = ["a", "b", "a", "c", "a", "a", "c", "b", "b", "a"];
 
         var answer = Math.floor(Math.random() * 10);
         var guess;
-        var tryagain;
 
+
+        let score = 0;
+
+    for(i = 0; i < 10; i++) // loop 10 times
+    {
+        console.log(i + 1);
 
         
 
-    for(i = 0; i < 4; i++)
-    {
-        console.log(i + 1);
-            guess = prompt("Take a guess!");
-            console.log(answer);
-
-        if(guess == answer)
+      /*  if(guess == answer)
         {
             alert('Correct Answer!');
             window.location.href = "https://solulous.github.io/winner_Page";
@@ -94,11 +93,88 @@
 
 
                 }
+                
             }
+            */
+
 
         
     }
 
+        
+        answer1 =prompt("1. What's my favourite food? Choose the right LETTER!\n a.Pizza, b.Lasagne, c.Ass");
+        if(answer1 == answers[0])
+        {
+            score++;
+            
+            
+        }
+        else{}
+
+        
+
+        answer1 =prompt("2. What's my first pets name?? Choose the right LETTER!\n a.jenny, b.bobby, c.milly");
+        if(answer1 == answers[1])
+        {
+            score++;
+            
+            
+        }
+        else{}
+
+        answer1 = prompt("3. What is my favourite FIRST colour? Choose the right LETTER!\n a.blue, b.red, c.green");
+        if(answer1 == answers[2])
+        {score++;}
+        else{}
+
+        answer1 = prompt("4. WHATS MY MUMS NAME FIRST NAME? Choose the right LETTER!\n a.maria, b.irine, c.irene");
+        if(answer1 == answers[3])
+        {score++;}
+        else{}
+
+        answer1 = prompt("5. whats my dads name?!\n a.lino, b.johny, c.manuel");
+        if(answer1 == answers[4])
+        {score++;}
+        else{}
+
+        answer1 = prompt("6. what's my place of birth?\n a.canico madeira, b.portugal, c.egypt");
+        if(answer1 == answers[5])
+        {score++;}
+        else{}
+
+        answer1 = prompt("7. how old was i when i had my first smartphone??\n a.12, b.14, c.13");
+        if(answer1 == answers[6])
+        {score++;}
+        else{}
+
+        answer1 = prompt("8. What is my first tattoo???\n a.loyalty, b.now & forever, c.crown");
+        if(answer1 == answers[7])
+        {score++;}
+        else{}
+
+        answer1 = prompt("9. what's my first girlfriend name?\n a.lilly, b.jenny, c.amber");
+        if(answer1 == answers[8])
+        {score++;}
+        else{}
+
+        
+        answer1 = prompt("10. What other language can i speak? \n a.jiberish, b.polish, c.bangladeshian");
+        if(answer1 == answers[9])
+        {score++;}
+        else{}
+
+
+        if(score >= 8)
+        {
+            alert("You scored " + score + " out of 10\n",score)
+            alert("You won!")
+            window.location.href = "https://solulous.github.io/winner_Page";
+        }
+        else{
+            alert("You scored " + score + " out of 10\n",score)
+            alert("You lost...!")
+        }
+        
 
     </script>
         
