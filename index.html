@@ -12,6 +12,7 @@
 
         var answer = Math.floor(Math.random() * 10);
         var guess;
+        var tryagain;
 
 
         
@@ -33,7 +34,67 @@
         {
             alert('Wrong.. Try again..');
             console.log(answer);
+            
+ 
         }
+
+        if(i >= 3)
+            {
+                alert('Loser!');
+                tryagain = prompt("Try Again?")
+
+
+              
+                while(tryagain != "Yes" || tryagain != "yes" || tryagain != "No" || tryagain != "no")
+                {
+                    if(tryagain == "No" || tryagain == "no")
+                    {
+                        alert('Okay goodbye...');
+                        window. close()
+                        break;
+                    }
+
+                    if(tryagain == "Yes" || tryagain == "yes")
+                    {
+
+
+                        for(i = 0; i < 4; i++)
+                        {
+                        guess = prompt("Take a guess!");
+
+                        if(guess != answer)
+                        {
+                            alert('wrong!');
+                        }
+
+                        if(guess == answer)
+                        {
+                            alert('Congratulations!');
+                            window.location.href = "https://solulous.github.io/winner_Page";
+                            break;
+                        
+                        }
+
+                        }
+                        
+
+                        
+
+                    }
+
+
+                    alert(tryagain + ' is Not a valid answer!');
+                    tryagain = prompt("Try Again?")
+                    
+
+                    
+
+                    
+
+
+
+                }
+            }
 
         
     }
